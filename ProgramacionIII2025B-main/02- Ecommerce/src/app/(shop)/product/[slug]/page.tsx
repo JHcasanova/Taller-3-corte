@@ -25,15 +25,19 @@ export default async function ({ params }: Props) {
         <SlideShowProductMobile
           Title={product.title}
           images={product.images}
+          className= "block md:hidden"
         />
 
       {/*SLINDE SHOW DESKTOP*/}
-      {/* <div className="hidden md:block col-span-1">
+      {<div className="hidden md:block col-span-2">
         <SlideShowProduct
           title={product.title}
           images={product.images}
+          className="hidden md:block"
         />
-      </div> */}
+      </div> 
+      
+      }
 
       <div className="col-span-1 md:col-span-2">
         <SlideShowProduct 
